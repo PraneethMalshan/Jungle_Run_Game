@@ -68,6 +68,31 @@ function jumpAnimation() { /* 4vid Jump animation*/
     boy.src = "Assests/photos/png/jump (" + jumpImageNumber + ").png"; /*4vid jumpAnimation ekata adaala images tika load kara ganiima*/
 }
 
+/*function jumpAnimation() {
+    // Increment the jumpImageNumber
+    jumpImageNumber = jumpImageNumber + 1;
+    if (jumpImageNumber <= 6) {
+        // Move the boy up during the first 6 frames
+        boyMarginTop = boyMarginTop - 20;
+        boy.style.marginTop = boyMarginTop + "px";
+    }
+    if (jumpImageNumber >= 7) {
+        // Move the boy down after the first 6 frames
+        boyMarginTop = boyMarginTop + 20;
+        boy.style.marginTop = boyMarginTop + "px";
+    }
+    if (jumpImageNumber === 13) {
+        // Reset jumpImageNumber and clear the interval when reaching 13
+        jumpImageNumber = 1;
+        clearInterval(jumpAnimationNumber);
+        jumpAnimationNumber = 0;
+        runImageNumber = 0;
+        runAnimationStart();
+    }
+    // Load the appropriate jump image
+    boy.src = "Assets/photos/png/jump (" + jumpImageNumber + ").png";
+}*/
+
 function jumpAnimationStart() { /*4vid Jump animation eka start karanne meeken*/
     clearInterval(idleAnimationNumber); /*4vid jump animation eka start weddi idel animation eka nawaththa ganne meeken.*/
     runImageNumber=0;
@@ -115,4 +140,28 @@ function moveBackground() {
     backgroundImagePositionX = backgroundImagePositionX - 20;
 
     document.getElementById("background").style.backgroundPositionX = backgroundImagePositionX + "px";
+}
+
+boxMarginLeft = 2040;
+
+function createBoxex() {
+
+    for (var i = 0; i <= 10; i++){
+
+        var box =document.createElement("div");
+        box.className = "box";
+        document.getElementById("background").appendChild(box);
+        box.style.marginLeft = boxMarginLeft + "px";
+
+        // boxMarginLeft = boxMarginLeft + 500;
+        if (i < 5) {
+            boxMarginLeft = boxMarginLeft + 500;
+        }
+        if (i >= 5) {
+            boxMarginLeft = boxMarginLeft + 250;
+        }
+
+    }
+
+
 }

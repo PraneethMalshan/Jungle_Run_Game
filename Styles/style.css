@@ -8,10 +8,20 @@
     background-image: url("../Assests/photos/background2.jpg");
     background-size: cover ;
     background-repeat: repeat-x;
+    overflow-x: hidden; /*meeka dammahama scrole karanna puluwan eka nathiwelaa yanawa(position: absolute karannath oona)*/
+    position: absolute;
 }
 
 .boy{
     height: 250px;
     margin-top: 400px;
     position: absolute;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    margin-top: 550px;
 }
