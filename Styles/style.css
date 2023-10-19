@@ -13,15 +13,26 @@
 }
 
 .boy{
-    height: 250px;
-    margin-top: 400px;
+    height: 210px;
+    margin-top: 500px;
     position: absolute;
 }
 
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    width: 160px;
+    height: 160px;
+    /*background-color: red;*/
     position: absolute;
-    margin-top: 550px;
+    margin-top: 443px;
+    background-image: url("../Assests/photos/jTx6757pc.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.score {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: absolute;
 }
